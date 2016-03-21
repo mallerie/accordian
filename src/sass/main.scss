@@ -2,57 +2,7 @@
 
 body {
   margin: 0px;
-}
-
-.main-container {
-  width: 50%;
-  margin: auto;
-  box-sizing: border-box;
-  position: absolute;
-  top: 0px;
-  transition: all 2s;
-  border: 1px solid red;
-  height: 256px;
-  // transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
-}
-
-.section-one, .section-two, .section-three {
-  // border: 1px solid #00C6D6;
-  border: solid 1px black;
-  box-sizing: border-box;
-  background-color: white;
-  transition: transform 2s;
-  position: relative;
-
-}
-
-.section-one {
-  z-index: -1
-}
-
-.slid1  {
-  
-}
-
-.section-two {
-  
-}
-
-.slid2 {
-position: relative;
-bottom: 131px;
-transition: transform 2s;
-}
-
-.section-three {
-
-  z-index: 1
-}
-
-.slid3  {
-  position: relative;
-  bottom: 262px;
-
+  padding: 0px;
 }
 
 div {
@@ -60,14 +10,40 @@ div {
   box-sizing: border-box;
 }
 
-button {
+.app {
+  width: 50%;
+  margin: auto;
+  box-sizing: border-box;
+  top: 0px;
+  transition: all 2s;
+  border: 1px solid #06a1ae;
+  // height: 256px;
+  // transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+}
+
+.section-wrapper {
+  // border: 1px solid #00C6D6;
+  // border: solid 1px black;
+  box-sizing: border-box;
+  border: 1px solid #06a1ae;
+  background-color: white;
+  transition: 1s ease;
+  overflow: hidden;
+  height: 240px;
+}
+
+
+.button {
   background: #00C6D6;
   box-sizing: border-box;
-  height: 40px;
-  padding: 20px 290px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding: 20px 290px;
   border: none;
   text-align: left;
-  position: relative;
+  // position: relative;
   &:hover {
     background: #00DAEC;
   }
@@ -75,11 +51,27 @@ button {
 
 p {
   text-align: center;
-  margin: 20px 20px;
+  padding: 20px 20px;
   box-sizing: border-box;
-  transition: all 2s;
+  margin: 0;
+  background: white;
+
 }
+
+.hidden {
+  height: 50px;
+  transition: 1s ease;
+  }
+
 
 // .element {
 //     transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
 // }
+
+
+
+
+
+
+
+
